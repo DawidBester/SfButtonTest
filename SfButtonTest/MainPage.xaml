@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SfButtonTest.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+
+            <buttons:SfButton
+                Background="LightBlue"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                ImageAlignment="Top"
+                ImageSize="18"
+                ShowIcon="True"
+                Stroke="Black"
+                Text="Up"
+                TextColor="Black"
+                VerticalOptions="Fill">
+                <buttons:SfButton.ImageSource>
+                    <x:FontImage
+                        FontFamily="FontAwesomeSolidFontFamily"
+                        Glyph="{StaticResource AngleDoubleUpSolid}"
+                        Size="16"
+                        Color="Black" />
+                </buttons:SfButton.ImageSource>
+            </buttons:SfButton>
+
+            <buttons:SfButton
+                Background="Salmon"
+                FontFamily="FontAwesomeSolidFontFamily"
+                FontSize="16"
+                HorizontalOptions="Fill"
+                ImageAlignment="Top"
+                ShowIcon="True"
+                Stroke="Black"
+                Text="{StaticResource AngleDoubleUpSolid}"
+                TextColor="Black"
+                VerticalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
